@@ -1,0 +1,805 @@
+:root
+{
+  --main-border: 2px solid white;
+  --main-background-color: white;
+}
+
+body{
+  background-color: #CCCCCC;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/* my application */
+
+}
+.App
+{
+  display: grid;
+  background-color: var(--main-background-color);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "nav nav"
+  "main sidebar"
+  "footer footer";
+  grid-gap: 1em;
+  border: var(--main-border);
+  border-radius: 18px;
+  margin: 15px;
+}
+
+/* end of application */
+
+
+
+/* my navigation */
+
+nav
+{
+  grid-area: nav;
+  margin: 25px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items:center ;
+  height: 50px;
+}
+.logo
+{
+  background-color: var(--main-background-color);
+  width: 10%;
+  height: 100%;
+  display: flex;
+  gap: 0.5em;
+  align-items:center ;
+}
+.picture
+{
+  width: 50%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: end;
+}
+.picture img
+{
+  width: 45%;
+}
+.name
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background-color);
+}
+.name h2
+{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list-box
+{
+  background-color: var(--main-background-color);
+  width: 77%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  gap: 3em;
+}
+a
+{
+  text-decoration: none;
+  color: #CCCCCC;
+  font-size: 12px;
+}
+a:hover
+{
+  color: black;
+  font-weight: bold;
+}
+
+.profile
+{
+  background-color: var(--main-background-color);
+  width: 12%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items:center ;
+}
+
+.profile button
+{
+  background-color: #6966FF;
+  width: 105px;
+  height: 35px;
+  border: 1px solid #6966FF;
+}
+
+/* end of navigation */
+
+
+
+/* my heading container  */
+
+main
+{
+  grid-area: main;
+  margin: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+.empty
+{
+  height: 20%;
+  width: 100%;
+  background-color: var(--main-background-color);
+}
+.heading
+{
+  height: 25%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading h1
+{
+  font-size: 53px;
+}
+.paragraph
+{
+  height: 15%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  align-items: center;
+}
+.paragraph p
+{
+  font-size: 16px;
+}
+span
+{
+  color: black;
+  font-weight: bold;
+}
+.content
+{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.left
+{
+  background-color: var(--main-background-color);
+  width: 50%;
+}
+.content .left
+{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+button
+{
+  width: 100px;
+  height: 40px;
+  border-radius: 18px;
+  background-color: #6966FF;
+  border: 1px solid #6966FF;
+  color: #FAFCFD;
+}
+.right
+{
+  background-color: var(--main-background-color);
+  width: 50%;
+}
+.content .right
+{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: end;
+  align-items: end;
+  background-color: var(--main-background-color);
+}
+
+.first-rect
+{
+  height: 20%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7em;
+}
+.sec-rect
+{
+  height: 20%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7em;
+}
+.third-rect
+{
+  height: 20%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7em;
+}
+.one-1
+{
+  height: 98%;
+  width: 69%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  right: 25px;
+}
+
+.two-1
+{
+  height: 98%;
+  width: 26%;
+  background-color: #DBCAAC;
+  border-radius: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.one-2
+{
+  height: 98%;
+  width: 55%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  right: 25px;
+}
+
+.two-2
+{
+  height: 98%;
+  width: 40%;
+  background-color: #F17404;
+  border-radius: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.one-3
+{
+  height: 98%;
+  width: 45%;
+  background-color: var(--main-background-color);
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  position: relative;
+  right: 25px;
+}
+
+.two-3
+{
+  height: 98%;
+  width: 50%;
+  background-color: #FE3F00;
+  border-radius: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.content .right p
+{
+  font-size: 11px;
+}
+.sphere
+{
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #F17404, #FAFCFD);
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  right: 25px;
+}
+/* end of main  */
+
+
+
+/* my sidebar  */
+.sidebar
+{
+  grid-area: sidebar;
+  margin: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* height: 100vh; */
+}
+.top-container
+{
+  height: 15%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3em;
+}
+.eclipse-1
+{
+  width: 20px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #F25A06;
+}
+.circle-6
+{
+  width: 30px;
+  height: 30px;
+  background-color: #F25A06;
+  border-radius: 50%;
+}
+.eclipse-2
+{
+  width: 50px;
+  height: 30px;
+  background-color: #F25A06;
+  border-radius: 50px;
+}
+.eclipse-3
+{
+  width: 430px;
+  height: 30px;
+  background-color: #F25A06;
+  border-radius: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.eclipse-3 .sphere
+{
+  position: relative;
+  right: 0;
+  left: 5px;
+}
+.bottom-container
+{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+.bottom-container .left
+{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+  gap: 1em;
+}
+.bottom-container .right
+{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+  gap: 1em;
+}
+.first
+{
+  width: 100%;
+  height: 20%;
+  background-color: var(--main-background-color);
+}
+.bottom-container .left .first
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2em;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 40px;
+}
+.left-container-1
+{
+  width: 35%;
+  background-color: var(--main-background-color);
+}
+.left-container-1 img
+{
+  width: 100%;
+  height: 100%;
+}
+.right-container-1
+{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+  justify-content: end;
+}
+.right-container-1 p
+{
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.second
+{
+  width: 100%;
+  height: 80%;
+  background-color: var(--main-background-color);
+}
+
+.bottom-container .right .first
+{
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.bottom-container .right .second
+{
+  border-radius: 20px;
+}
+.bottom-container .right .second img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.bottom-container .left .second img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.bottom-container .left .second
+{
+  border-radius: 20px;
+}
+.box-1
+{
+  width: 100%;
+  height: 50%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.circle-1
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 16px;
+}
+.circle-2
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 29px;
+}
+.circle-3
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 42px;
+}
+.circle-4
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 55px;
+}
+.circle-5
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--main-background-color);
+  position: relative;
+  right: 68px;
+}
+.box-1 img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.box-2
+{
+  width: 100%;
+  height: 50%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  color: grey;
+  align-items: center;
+}
+.box-2 p
+{
+  font-size: 12px;
+}
+.box-2 span
+{
+  font-size: 15px;
+}
+/* end of sidebar  */
+
+
+
+
+
+
+
+/* my last box  */
+footer
+{
+  grid-area: footer;
+  margin: 25px;
+  margin-top: 0;
+  display: flex;
+  gap: 1em;
+}
+
+footer .left
+{
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+footer .right
+{
+  background-color: var(--main-background-color);
+}
+.top
+{
+  height: 35%;
+  width: 100%;
+  background-color: var(--main-background-color);
+  display: flex;
+  gap: 0.3em;
+  display: flex;
+  align-items: center;
+}
+.left-2
+{
+  width: 40px;
+  height: 40px;
+  background-color: #DFB4BD;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-2 p
+{
+  color: whitesmoke;
+  font-weight: bold;
+}
+.right-2
+{
+  width: 70%;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.right-2 p
+{
+  font-weight: bold;
+}
+.bottom
+{
+  height: 65%;
+  width: 100%;
+  display: flex;
+}
+.bottom-squares
+{
+  width: 23%;
+  height: 50px;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: start;
+}
+.bottom-squares img
+{
+  width: 40%;
+  height:60%;
+}
+/* the END  */
+
+
+
+
+/* MEDIA QUERY  */
+
+@media only screen and (max-width: 740px)
+{
+
+  /* media for app  */
+  .App
+  {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "nav"
+      "main"
+      "sidebar"
+      "footer"
+      ;
+
+  }
+  /* END  */
+
+
+
+  /* NAVIGATION  */
+  nav
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  /* END  */
+
+
+  /* MAIN-BOX  */
+  main
+  {
+    margin-right: 25px;
+  }
+  .content
+
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .left
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .content .right
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* SIDEBAR  */
+  .sidebar
+  {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+  }
+  .bottom-container
+  {
+    flex-direction: column;
+  }
+  .bottom-container .left
+  {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .bottom-container .right
+  {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .bottom-container .right .box
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .first
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bottom-container .left .first
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 39px;
+  }
+  .left-container-1
+  {
+    width: 30%;
+    height: 100%;
+  }
+  .right-container-1
+  {
+    width: 70%;
+    height: 100%;
+    
+  }
+
+  /* END  */
+
+ /* Foot@  */
+
+ footer
+ {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+ }
+
+ footer .left
+ {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+ }
+ footer .right
+ {
+  width: 100%;
+  height: 100px;
+ }
+ .top
+ {
+  width: 200px;
+  height: 70px;
+  margin-right: 50px;
+ }
+ .bottom
+ {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-right: 50px;
+ }
+ .bottom-squares
+ {
+  width: 100px;
+  height: 100px;
+ }
+}
