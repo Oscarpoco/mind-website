@@ -640,7 +640,7 @@ footer .right
   height: 50px;
   background-color: var(--main-background-color);
   display: flex;
-  justify-content: start;
+  /* justify-content: start; */
 }
 .bottom-squares img
 {
