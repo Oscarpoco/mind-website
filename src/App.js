@@ -14,16 +14,16 @@ function App() {
           </div>
         </div>
         <div className='list-box'>
-          <div className='home'>
+          <div className='list'>
             <a href='home'>Home</a>
           </div>
-          <div className='jbout'>
+          <div className='list'>
             <a href='about'>About</a>
           </div>
-          <div className='jlog'>
+          <div className='list'>
             <a href='blog'>Blog</a> 
           </div>
-          <div className='jobs'>
+          <div className='list'>
             <a href='jobs'>Jobs</a>
           </div>
         </div>
@@ -69,6 +69,26 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='footer'>
+          <div className='top-one'>
+            <div className='circle-class'>5k+</div>
+            <div className='company'>Trusted By Company</div>
+          </div>
+          <div className='bottom-one'>
+                <div className='bottom-squares'>
+                    <img src='docuSign.png' alt='docusign'></img>
+                </div>
+                <div className='bottom-squares'>
+                    <img src='british.png' alt='british'></img>
+                </div>
+                <div className='bottom-squares'>
+                    <img src='fedEx.png' alt='fedEx'></img>
+                </div>
+                <div className='bottom-squares'>
+                    <img src='starlingBank.png' alt='starling'></img> 
+                </div>
+          </div>
+        </div>
       </main>
       <div className='sidebar'>
         <div className='top-container'>
@@ -97,7 +117,9 @@ function App() {
                 </div>
               </div>
               <div className='second'>
-                  <img src='4.jpg' alt='founder'></img>
+                  <div className=''></div>
+                  <div className=''></div>
+                  <div className=''></div>
               </div>
             </div>
             <div className='right'>
@@ -130,7 +152,7 @@ function App() {
             </div>
         </div>
       </div>
-      <footer>
+      {/* <footer>
           <div className='left'>
               <div className='top'>
                 <div className='left-2'>
@@ -158,7 +180,7 @@ function App() {
           <div className='right'>
             
           </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
